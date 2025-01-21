@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Website </title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()">x</i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>        
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()">--</i>
+    </nav>
+    <h1> Our Courses</h1>
+  </section>
+  <!-- --------- cources----------->
+  <section class="course">
+    <h1>Courses We offer</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequatur distinctio obcaecati.
+    </p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam neque nisi enim commodi suscipit dicta ipsa quaerat quibusdam nulla, sit sequi velit reiciendis possimus, consectetur facilis! Eum, culpa placeat.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam neque nisi enim commodi suscipit dicta ipsa quaerat quibusdam nulla, sit sequi velit reiciendis possimus, consectetur facilis! Eum, culpa placeat.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quisquam neque nisi enim commodi suscipit dicta ipsa quaerat quibusdam nulla, sit sequi velit reiciendis possimus, consectetur facilis! Eum, culpa placeat.
+        </p>
+      </div> 
+    </div>
+  </section> 
+
+  <!-- ---------- Facilities------------ -->
+  <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/library.png">
+        <h3>World Class Libary</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae alias autem minus.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/basketball.png">
+        <h3>Largest Play Ground</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae alias autem minus.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/cafeteria.png">
+        <h3>Tasty Healthy Food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repudiandae alias autem minus.</p>
+      </div>
+    </div>
+  </section>
+
+  <!------------ Footer ---------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim sed corporis repellendus a delectus <br>obcaecati rem modi eum? Modi maiores natus quis ratione facilis dolore debitis et in? Laborum.</p>
+      <div class="icons">
+        <i class="fa fa-facebook">F</i>
+        <i class="fa fa-instagram">I</i>
+        <i class="fa fa-twitter">T</i>
+        <i class="fa fa-linkedin">L</i>
+      </div>
+      <p>
+        Made with Yohannes Tesfaye
+      </p>
+    </section>
+
+  <!------Javascript for toggel menu------->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
